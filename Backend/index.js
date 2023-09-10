@@ -15,8 +15,8 @@ app.use(cors());
 app.use(json());
 
 // Connecting to MongoDB
-
-mongoose.connect("mongodb+srv://anni:ZQbaUfIqyVu5gfmc@cluster0.uotehnf.mongodb.net/ContactsApp").then(() => {
+// Enter ur own URL of mongodb to connect to the database
+mongoose.connect("").then(() => {
     console.log("Database connected succesfully");
 })
 
@@ -360,14 +360,3 @@ app.listen(PORT, () => {
     console.log("Listening On PORT : " + PORT);
 });
 
-//  {
-//   "name":"Manpreet",
-//   "username":"Mann",
-//   "password":"hello"
-// }
-
-//  {
-//   "name":"Sahil",
-//   "username":"sahu",
-//   "password":"sahu123"
-// }
